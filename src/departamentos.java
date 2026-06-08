@@ -13,7 +13,7 @@ public class departamentos {
                        1 - Listar
                        2 - Cadastrar
                        3 - Deletar
-                       4 - Alterar Senha
+                       4 - Alterar
                        5 - Voltar Menu Anterior
                        """);
                opcao = sc.nextInt();
