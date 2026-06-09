@@ -31,6 +31,7 @@ public class menu {
                     departamentos.DepartM(usuarioLogado);
                     break;
                 case 4:
+                    visitas.VisitasM();
                     break;
                 case 5:
                     System.out.println("Saindo");
