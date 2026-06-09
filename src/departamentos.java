@@ -24,7 +24,7 @@ public class departamentos {
                        break;
                    case 2:
                        sc.nextLine();
-                       System.out.print("Informe o Nome: ");
+                       System.out.print("Nome Departamento: ");
                        nome = sc.nextLine();
                    if (nome.equals(" ")){
                        System.out.println("Nenhuma informação deve estar vaiza");
