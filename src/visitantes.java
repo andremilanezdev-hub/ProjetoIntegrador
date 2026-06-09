@@ -1,19 +1,21 @@
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
 public class visitantes {
-    public static void DepartM(String usu) throws SQLException {
+    public static void DepartM(MysqlxDatatypes.Scalar.String usu) throws SQLException {
         Scanner sc = new Scanner(System.in);
-        String usuario="", nome="", cpf="", telefone="", empresa="";
+        MysqlxDatatypes.Scalar.String usuario="", nome="", cpf="", telefone="", empresa="";
         int opcao = 0, idVis=0;
            do {
                System.out.printf("""
-                       ====== Visitantes ====
+                       ====== Visitantes ======
                        1 - Listar
                        2 - Cadastrar
                        3 - Deletar
-                       4 - Alterar 
+                       4 - Alterar
                        5 - Voltar Menu Anterior
                        """);
                opcao = sc.nextInt();
