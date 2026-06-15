@@ -52,7 +52,7 @@ public class visitas_visitantes {
                        menu.abrir(usuario);
                        break;
                    default:
-                       System.out.println("Opção Inválida");
+                       System.out.println("Opção Inválida.");
                        break;
                }
            }while (opcao !=4);
