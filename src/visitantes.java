@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class visitantes {
     public static void DepartM(MysqlxDatatypes.Scalar.String usu) throws SQLException {
         Scanner sc = new Scanner(System.in);
-        MysqlxDatatypes.Scalar.String usuario="", nome="", cpf="", telefone="", empresa="";
+        String usuario="", nome="", cpf="", telefone="", empresa="";
         int opcao = 0, idVis=0;
            do {
                System.out.printf("""

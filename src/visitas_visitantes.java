@@ -58,13 +58,13 @@ public class visitas_visitantes {
            }while (opcao !=4);
     }
     private static void listar() throws SQLException {
-        ResultSet rs = conexao_banco.getSelect("SELECT vt.nome, v.data_entrada,v.data_saida,v.motivo\n" +
-                                                   " FROM visitantes_visitas vv\n" +
-                                                   "inner join visitantes vt on vv.visitantes_id = vt.id\n" +
+        ResultSet rs = conexao_banco.getSelect("SELECT v.id, vt.nome, v.data_entrada,v.data_saida,v.motivo " +
+                                                   " FROM visitantes_visitas vv " +
+                                                   "inner join visitantes vt on vv.visitantes_id = vt.id " +
                                                    "inner join visitas v on vv.visitas_id =  v.id;");
-        System.out.println("Id   -  visitantes_visitas ");
+        System.out.println("Id Visita   -  visitantes_visitas ");
         while (rs.next()) {
-            System.out.printf(" %d - %s \n", rs.getInt("id"), rs.getString("nome"));
+            System.out.printf("   %d       - %s \n", rs.getInt("v.id"), rs.getString("vt.nome"));
         }
     }
     private static boolean verifica(String nome) {

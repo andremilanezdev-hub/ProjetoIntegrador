@@ -7,7 +7,7 @@ public class visitas {
     public static void VisitasM() throws SQLException {
     Scanner sc = new Scanner(System.in);
         int opcao = 0,idVisita, departamentoId, usuarioId;
-        String dataEntrada, dataSaida, motivo;
+        String dataEntrada, dataSaida, motivo,usuario="";
         do {
             System.out.printf("""
                     ====== VISITAS ======
@@ -15,7 +15,8 @@ public class visitas {
                     2 - Cadastrar
                     3 - Excluir
                     4 - Alterar
-                    5 - Voltar
+                    5 - Vinculo Visitantes
+                    6 - Voltar
                     """);
             opcao = sc.nextInt();
             sc.nextLine();
@@ -116,7 +117,9 @@ public class visitas {
                     break;
 
                 case 5:
-                    menu.abrir(usu);
+                    visitas_visitantes.Visitas_visitantesM(usuario);
+                case 6:
+                    menu.abrir(usuario);
                     break;
                 default:
                     System.out.println("Opção inválida.");
