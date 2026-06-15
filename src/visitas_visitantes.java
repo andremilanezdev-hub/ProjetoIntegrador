@@ -8,7 +8,7 @@ public class visitas_visitantes {
         String usuario="";
         int opcao = 0, visi_id=0, visit_id;
            do {
-               System.out.printf("""
+               System.out.println("""
                        ====== Visitantes Visitas ====
                        1 - Listar
                        2 - Cadastrar
